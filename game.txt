@@ -1,10 +1,13 @@
-class decor(func):
-   def inner():
-     print("Hey Hello")
-     func()
-     print("how are you")
-  return inner
+def decor(func):
+    def inner():
+        print("Hey Hello")
+        func()
+        print("how are you")
+    return inner
+def display2():
+    print("have a good day")
 @decor
 def display():
-  return "hey hii"
-print(display())
+  print("hey hii")
+display()
+display2()
