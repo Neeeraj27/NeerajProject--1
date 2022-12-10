@@ -1,0 +1,10 @@
+class decor(func):
+   def inner():
+     print("Hey Hello")
+     func()
+     print("how are you")
+  return inner
+@decor
+def display():
+  return "hey hii"
+print(display())
