@@ -1,0 +1,16 @@
+import numpy as np
+val=[]
+row=int(input("Enter no of rows :"))
+col=int(input("Enter no of columns :"))
+for i in range(row):
+    a=[]
+    for j in range(col):
+        num=int(input("Enter number :"))
+        a.append(num)
+    val.append(a)
+arr=np.array(val)
+for i in range(row):
+    for j in range(col):
+        print(arr[i,j],end="  ")
+    print()
+print(type(arr))
